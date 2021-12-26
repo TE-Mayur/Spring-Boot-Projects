@@ -1,0 +1,7 @@
+
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ì¹×Žß/HÄ1RMINORZ
+CODE_SMELL
+j
+java:S1128"8Remove this unused import 'javax.persistence.OneToMany'.(«õù;8Ì¹×Žß/HÆ1RMINORZ
+CODE_SMELL

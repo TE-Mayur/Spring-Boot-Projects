@@ -1,0 +1,8 @@
+package com.te.springdemo.exception;
+
+public class CustomException extends RuntimeException {
+
+	public CustomException(String msg) {
+		super(msg);
+	}
+}

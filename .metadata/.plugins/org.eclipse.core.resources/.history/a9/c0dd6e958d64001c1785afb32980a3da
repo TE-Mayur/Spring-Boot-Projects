@@ -1,0 +1,20 @@
+package com.te.springdemo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.springdemo.beans.UserBean;
+import com.te.springdemo.beans.UserResponse;
+import com.te.springdemo.service.UserService;
+
+@RestController
+public class UserController {
+
+	@Autowired
+	private UserService service;
+	
+	public ResponseEntity<UserResponse> getUserData(UserBean bean){
+		
+	}
+}

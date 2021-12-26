@@ -1,0 +1,12 @@
+package com.te.springbootdatajpa.bean;
+
+import java.io.Serializable;
+
+public class Employee implements Serializable{
+	
+	private String name;
+	
+	private Integer id;
+	
+
+}

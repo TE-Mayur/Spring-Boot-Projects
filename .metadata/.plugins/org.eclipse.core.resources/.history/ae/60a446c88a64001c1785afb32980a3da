@@ -1,0 +1,5 @@
+package com.te.springdemo.exception;
+
+public class CustomException {
+
+}

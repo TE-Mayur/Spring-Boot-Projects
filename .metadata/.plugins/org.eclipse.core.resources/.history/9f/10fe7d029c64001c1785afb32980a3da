@@ -1,0 +1,33 @@
+package com.te.springdemo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.springdemo.beans.UserBean;
+import com.te.springdemo.beans.UserResponse;
+import com.te.springdemo.service.UserService;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+	@Autowired
+	private UserService service;
+	
+	@GetMapping(path ="/account")
+	public ResponseEntity<UserResponse> getUserData(Integer id){
+		UserResponse response = new UserResponse(false, service.getUser(id));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+	
+	@PostMapping(path = "/account")
+	public ResponseEntity<UserResponse> storeData(UserBean bean){
+	UserResponse response = new UserResponse(false, service.register(bean));
+	return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+}

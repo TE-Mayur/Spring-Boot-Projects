@@ -1,0 +1,30 @@
+package com.te.springdemo.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.springdemo.beans.EmployeesInfo;
+import com.te.springdemo.beans.EmployeesResponse;
+import com.te.springdemo.services.EmployeesService;
+
+import net.bytebuddy.asm.Advice.Return;
+
+@RestController
+@RequestMapping("/user")
+public class EmployeesController {
+
+	@Autowired
+	private EmployeesService service;
+	
+	@PostMapping("signup")
+	public ResponseEntity<EmployeesResponse> storeData(@RequestBody EmployeesInfo info) {
+		EmployeesResponse response = new EmployeesResponse(false , service.register(info));
+		return new ResponseEntity<EmployeesResponse>(response, HttpStatus.OK);
+	
+	}
+}

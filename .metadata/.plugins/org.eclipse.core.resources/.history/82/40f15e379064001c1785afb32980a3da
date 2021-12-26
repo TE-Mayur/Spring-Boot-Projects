@@ -1,0 +1,11 @@
+package com.te.springdemo.service;
+
+import java.util.Optional;
+
+import com.te.springdemo.beans.UserBean;
+
+public interface UserService {
+
+	public Optional<UserBean> getUser(Integer id);
+	
+}

@@ -1,0 +1,5 @@
+package com.te.springdemo.dao;
+
+public interface EmployeesDAO {
+
+}

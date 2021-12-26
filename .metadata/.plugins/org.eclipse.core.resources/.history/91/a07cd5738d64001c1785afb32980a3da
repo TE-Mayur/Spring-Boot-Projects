@@ -1,0 +1,5 @@
+package com.te.springdemo.controller;
+
+public class UserController {
+
+}

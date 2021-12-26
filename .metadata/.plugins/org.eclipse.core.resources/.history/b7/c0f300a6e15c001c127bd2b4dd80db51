@@ -1,0 +1,65 @@
+package com.te.resumebuilder.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.resumebuilder.beans.EducationInfo;
+import com.te.resumebuilder.beans.ExperienceInfo;
+import com.te.resumebuilder.beans.ExtraDetails;
+import com.te.resumebuilder.beans.PersonalDetails;
+import com.te.resumebuilder.beans.UserInfo;
+import com.te.resumebuilder.beans.UserResponse;
+import com.te.resumebuilder.services.UserService;
+
+@RestController
+public class UserController {
+
+	@Autowired
+	private UserService service;
+	
+	@PostMapping(path="/signin")
+	public ResponseEntity<UserResponse> login(@RequestBody UserInfo login){
+		UserResponse response=new UserResponse(false,service.login(login.getEmail(),login.getPassword()));
+		return new ResponseEntity<UserResponse>(response,HttpStatus.OK);
+	}
+
+	@PostMapping(path = "/signup")
+	public ResponseEntity<UserResponse> storeData(@RequestBody UserInfo info){
+		UserResponse response = new UserResponse(false, service.signup(info));
+		return new ResponseEntity<UserResponse>(response,HttpStatus.OK);
+	}
+
+	@PostMapping(path = "/education")
+	public ResponseEntity<UserResponse> educationDetails(@RequestBody EducationInfo edu) {
+		UserResponse response = new UserResponse(false, service.education(edu));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+
+	@PostMapping(path = "/experience")
+	public ResponseEntity<UserResponse> experience(@RequestBody ExperienceInfo exp) {
+		UserResponse response = new UserResponse(false, service.expInfo(exp));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+	
+	@PostMapping(path = "/personaldetails")
+	public ResponseEntity<UserResponse> personalDetails(@RequestBody PersonalDetails details) {
+		UserResponse response = new UserResponse(false, service.personalDetails(details));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+	
+	@PostMapping(path = "/extradetails")
+	public ResponseEntity<UserResponse> extraDetails(@RequestBody ExtraDetails extraDetails) {
+		UserResponse response = new UserResponse(false, service.extraDetails(extraDetails));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+	
+	@PostMapping(path = "/project")
+	public ResponseEntity<UserResponse> educationDetails(@RequestBody EducationInfo edu) {
+		UserResponse response = new UserResponse(false, service.education(edu));
+		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
+	}
+}

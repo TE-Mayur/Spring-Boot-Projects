@@ -1,0 +1,9 @@
+package com.te.springdemo.dao;
+
+import com.te.springdemo.beans.EmployeesInfo;
+
+public interface EmployeesDAO {
+
+	
+	public EmployeesInfo register(EmployeesInfo info)
+}

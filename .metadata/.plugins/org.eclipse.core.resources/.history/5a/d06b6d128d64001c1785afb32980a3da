@@ -1,0 +1,9 @@
+package com.te.springdemo.service;
+
+import com.te.springdemo.beans.UserBean;
+
+public interface UserService {
+
+	public UserBean getUser(Integer id);
+	
+}

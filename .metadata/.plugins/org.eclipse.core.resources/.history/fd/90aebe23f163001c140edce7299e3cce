@@ -1,0 +1,11 @@
+package com.te.springdemo.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.springdemo.services.EmployeesService;
+
+@RestController
+public class EmployeesController {
+
+	private EmployeesService service;
+}

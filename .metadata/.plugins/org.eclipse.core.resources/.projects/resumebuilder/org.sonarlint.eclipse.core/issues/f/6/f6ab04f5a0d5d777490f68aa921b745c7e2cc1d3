@@ -1,0 +1,39 @@
+
+y
+java:S4684X"@Replace this persistent entity with a simple POJO or DTO object.(ºĞù‰8™ÜôÜ/Hœ1RCRITICALZVULNERABILITY
+~
+java:S4684R"@Replace this persistent entity with a simple POJO or DTO object.(¦Í™øÿÿÿÿ8™ÜôÜ/H¥1RCRITICALZVULNERABILITY
+‘
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8†¸‹Ü/Hª1RMINORZ
+CODE_SMELL
+~
+java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(öèã™ùÿÿÿÿ8™ÜôÜ/H1RCRITICALZVULNERABILITY
+‘
+java:S2293`"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÏÊ¶âÛ/H¦1RMINORZ
+CODE_SMELL
+‘
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÉŠ“¹Û/H£1RMINORZ
+CODE_SMELL
+~
+java:S4684^"@Replace this persistent entity with a simple POJO or DTO object.(ô½îÿüÿÿÿÿ8™ÜôÜ/H 1RCRITICALZVULNERABILITY
+‘
+java:S2293Z"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÏÊ¶âÛ/H¬1RMINORZ
+CODE_SMELL
+y
+java:S4684F"@Replace this persistent entity with a simple POJO or DTO object.(ğ›Ô8œÛáß/Hï1RCRITICALZVULNERABILITY
+‘
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8™Ã‰¹Û/H®1RMINORZ
+CODE_SMELL
+‘
+java:S2293N"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÏÊ¶âÛ/H¡1RMINORZ
+CODE_SMELL
+‘
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÏÊ¶âÛ/H°1RMINORZ
+CODE_SMELL
+~
+java:S4684@"@Replace this persistent entity with a simple POJO or DTO object.(Œƒ¬ïùÿÿÿÿ8™ÜôÜ/HŸ1RCRITICALZVULNERABILITY
+‘
+java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¶¢ùÿÿÿÿ8ÏÊ¶âÛ/H¨1RMINORZ
+CODE_SMELL
+y
+java:S4684:"@Replace this persistent entity with a simple POJO or DTO object.(Å©ø‡8™ÜôÜ/H1RCRITICALZVULNERABILITY
